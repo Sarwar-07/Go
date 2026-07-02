@@ -105,4 +105,91 @@
                     <input type="text" id="full-name" name="full_name" placeholder="Name" size="25">
                     
                     <label style="margin-left: 15px;" for="start-date">Desired Start Date</label>
-                    <input type="
+                    <input type="date" id="start-date" name="start_date">
+                </div>
+
+                <div class="form-row">
+                    <label for="tier">Membership Tier</label>
+                    <select id="tier" name="tier">
+                        <option value="hot-desk">Hot Desk Lounge</option>
+                        <option value="dedicated">Dedicated Desk</option>
+                        <option value="private">Private Office Pod</option>
+                    </select>
+
+                    <label style="margin-left: 15px;" for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="phone number" size="20">
+
+                    <label style="margin-left: 15px;" for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Email" size="25">
+                </div>
+            </section>
+
+            <section>
+                <p>Which operational toolchains do you rely on most in your daily workflow?</p>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="tool-git" name="tools" value="git">
+                    <label for="tool-git">Git/GitHub</label>
+
+                    <input type="checkbox" id="tool-vscode" name="tools" value="vscode">
+                    <label for="tool-vscode">VS Code</label>
+
+                    <input type="checkbox" id="tool-docker" name="tools" value="docker">
+                    <label for="tool-docker">Docker</label>
+
+                    <input type="checkbox" id="tool-cloud" name="tools" value="cloud">
+                    <label for="tool-cloud">Cloud Servers</label>
+
+                    <input type="checkbox" id="tool-other" name="tools" value="other">
+                    <label for="tool-other">Other</label>
+                    
+                    <input type="text" name="tools_other_text" size="20">
+                </div>
+                <hr>
+            </section>
+
+            <section>
+                <div class="form-row">
+                    <label for="guests">Additional Guest Passes Requested</label>
+                    <br>
+                    <input type="number" id="guests" name="guests" min="0" value="0" style="width: 150px;">
+                    
+                    <span class="checkbox-group" style="margin-left: 20px;">
+                        <input type="checkbox" id="billing-monthly" name="billing" value="monthly">
+                        <label for="billing-monthly">Auto-Pay Monthly</label>
+
+                        <input type="checkbox" id="billing-annual" name="billing" value="annual">
+                        <label for="billing-annual">Annual Discount</label>
+
+                        <input type="checkbox" id="billing-invoice" name="billing" value="invoice">
+                        <label for="billing-invoice">Company Invoice</label>
+                    </span>
+                </div>
+            </section>
+
+            <section class="liability-text">
+                <p>I understand that network infrastructure bandwidth usage is monitored for network stability. I agree to comply with all acceptable use policies of Nexus Space Systems LLC.</p>
+                
+                <div class="form-row" style="margin-top: 15px;">
+                    <label for="signature">Authorized Signature</label>
+                    <input type="text" id="signature" name="signature" size="25">
+
+                    <label style="margin-left: 15px;" for="date-signed">Date Signed</label>
+                    <input type="date" id="date-signed" name="date_signed">
+                </div>
+                
+                <div class="form-row">
+                    <button type="submit">Submit Application</button>
+                </div>
+            </section>
+
+        </form>
+    </main>
+    
+    <hr>
+
+    <footer>
+        <p>&copy; 2026 Nexus Space Systems. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
